@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Academics - Nagaswami English School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="n1.css">
+</head>
+
+<body class="bg-[#f5f5f0] min-h-screen" style="background: url('bgm.jpg') no-repeat center center/cover;">
+
+ <!-- Navbar -->
+  <nav class="bg-[#002147] text-white p-4 flex justify-between items-center">
+    <div class="text-3xl font-extrabold">Shri Nagaswami English School</div>
+
+    <!-- Hamburger Menu -->
+    <div class="md:hidden ml-auto"> <!-- Aligned to the right corner -->
+      <button id="menu-btn" class="focus:outline-none">☰</button>
+    </div>
+
+    <!-- Navigation Links -->
+    <div id="menu" class="space-x-8 hidden md:flex text-lg font-semibold">
+      <a href="#home" class="hover:text-[#5A9BD3]">Home 🏡</a>
+
+<!-- About Us Dropdown -->
+      <div class="relative group">
+        <a href="#about" class="hover:text-[#5A9BD3]">About Us⚡</a>
+        <div class="absolute hidden group-hover:block bg-[#001830] text-white rounded-lg shadow-lg p-2 space-y-2">
+          <a href="legacy.html" class="block hover:bg-[#004080] px-4 py-2 rounded">Our Legacy</a>
+          <a href="visionary.html" class="block hover:bg-[#004080] px-4 py-2 rounded">The Visionary</a>
+          <a href="v&m.html" class="block hover:bg-[#004080] px-4 py-2 rounded">Purpose & Values</a>
+          <a href="management.html" class="block hover:bg-[#004080] px-4 py-2 rounded">Leadership Team</a>
+        </div>
+      </div>
+
+ <!-- Academics Dropdown -->
+      <div class="relative group">
+        <a href="#academics" class="hover:text-[#5A9BD3]">Academics 📚</a>
+        <div class="absolute hidden group-hover:block bg-[#001830] text-white rounded-lg shadow-lg p-2 space-y-2">
+          <a href="curriculum.html" class="block hover:bg-[#004080] px-4 py-2 rounded">Curriculum</a>
+          <a href="beyond-academics.html" class="block hover:bg-[#004080] px-4 py-2 rounded">Beyond Academics</a>
+        </div>
+      </div>
+
+      <a href="events.html" class="hover:text-[#5A9BD3]">Events💡</a>
+      <a href="Contact.html" class="hover:text-[#5A9BD3]">Contact Us📞</a>
+
+    </div>
+  </nav>
+
+
+
+  <!-- Beyond Academics Section -->
+  <section class="max-w-7xl mx-auto mt-12 p-8">
+    <div class="text-center mb-12">
+      <h1 class="text-6xl font-extrabold text-[#002147]">🎉 Beyond Academics 🎉</h1>
+      <p class="text-lg text-gray-800 mt-4">Enriching student lives through cultural, educational, and extracurricular experiences.</p>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col md:flex-row">
+      <!-- Image Section -->
+      <div class="md:w-1/2 p-8 flex items-center justify-center">
+        <img src="beyond-academics.jpg" alt="Beyond Academics" class="rounded-lg shadow-md w-full">
+      </div>
+
+      <!-- Content Section -->
+      <div class="md:w-1/2 p-8">
+        <h2 class="text-4xl font-extrabold text-[#002147] mb-6">Holistic Development Initiatives</h2>
+
+        <ul class="list-disc text-lg text-gray-800 space-y-4 ml-6">
+          <li><strong>Annual Function:</strong> Celebrating creativity and talent through vibrant performances and showcases.</li>
+          <li><strong>Industrial & Educational Trips:</strong> Providing practical exposure and real-world insights through immersive experiences.</li>
+          <li><strong>Cultural Celebrations:</strong> Honoring the rich heritage and commemorating iconic personalities through festive events.</li>
+          <li><strong>Community Service:</strong> Encouraging social responsibility through active participation in community welfare programs.</li>
+          <li><strong>Sports Events:</strong> Promoting physical fitness and teamwork through diverse sports competitions and activities.</li>
+          <li><strong>Workshops & Seminars:</strong> Enhancing knowledge and skills through expert-led sessions on various topics.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#002147] text-white text-center p-4 text-lg font-semibold mt-12">
+    <p>Contact us: +91 96573 64987</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/* Dynamic Styling for Nagaswami English School */
+
+/* Smooth Hover Effects */
+nav a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #5A9BD3;
+  transform: scale(1.1);
+}
+
+/* Dropdown Animations */
+.group:hover .group-hover\:block {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Video Section Animation */
+video {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+}
+
+video:hover {
+  transform: scale(1.05);
+}
+
+/* Button Hover Animation */
+button, .cta-button {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .cta-button:hover {
+  background-color: #FFC107;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Animation */
+footer p {
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Leaf Icons Bounce Effect */
+nav a:hover::after {
+  content: ' ';
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Green Info Bar Animation */
+.bg-[#004d00] {
+  animation: zoomInOut 2s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .group:hover .group-hover\:block {
+    position: static;
+  }
+
+  video {
+    width: 90%;
+  }
+
+  nav a {
+    padding: 8px 0;
+  }
+} 
+
+/* Smooth Page Scroll */
+html {
+  scroll-behavior: smooth;
+} 
+
+/* Add Leaf-Themed Gradient */
+body {
+  background: linear-gradient(to bottom, #f5f5f0, #e8f5e9);
+}
